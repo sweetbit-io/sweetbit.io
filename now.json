@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "sweetbit.io",
+  "alias": "sweetbit.io",
+  "regions": ["bru", "sfo", "syd"],
+  "scope": "the-lightning-land",
+  "env": {
+  },
+  "builds": [{
+    "src": "next.config.js",
+    "use": "@now/next"
+  }],
+  "routes": [{
+    "src": "/(.*)",
+    "dest": "/$1",
+    "methods": ["GET"]
+  }]
+}
